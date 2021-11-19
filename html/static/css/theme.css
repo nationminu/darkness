@@ -1,0 +1,164 @@
+.ff-m {
+}
+
+.main-font { font-family: 'Montserrat', sans-serif !important; }
+
+.fs-08 { font-size: 0.8em !important; }
+.fs-1 { font-size: 1em !important; }
+.fs-11 { font-size: 1.1em !important; }
+.fs-12 { font-size: 1.2em !important; }
+.fs-13 { font-size: 1.3em !important; }
+.fs-14 { font-size: 1.4em !important; }
+.fs-15 { font-size: 1.5em !important; }
+.fs-16 { font-size: 1.6em !important; }
+.fs-17 { font-size: 1.7em !important; }
+.fs-18 { font-size: 1.8em !important; }
+.fs-19 { font-size: 1.9em !important; }
+.fs-2 { font-size: 2em !important; }
+
+.lh-12 { line-height: 1.2em !important; }
+.lh-15 { line-height: 1.5em !important; }
+.lh-2 { line-height: 2em !important; }
+
+.fw-t { font-weight: 100 !important; }
+.fw-l { font-weight: 300 !important; }
+.fw-sb { font-weight: 600 !important; }
+.fw-b { font-weight: 700 !important; }
+.fw-eb { font-weight: 800 !important; }
+
+/* Trend Watch */
+.fc-tw { color: #43C5DD !important; }
+.fc-tw-light { color: #C6F4FC !important; }
+.bg-tw { background-color: #43C5DD !important; }
+.bg-tw-light { background-color: #C6F4FC !important; }
+.bd-tw { border-color: #43C5DD !important; }
+.btn-tw { background-color: #43C5DD !important; color: #fff !important; }
+.btn-tw-outline { border-color: #43C5DD !important; background-color: #fff !important; color: #43C5DD !important; }
+
+/* Future Talk */
+.fc-ft { color: #6B92EF !important; }
+.fc-ft-light { color: #D4E1FF !important; }
+.bg-ft { background-color: #6B92EF !important; }
+.bg-ft-light { background-color: #D4E1FF !important; }
+.bd-ft { border-color: #6B92EF !important; }
+.btn-ft { background-color: #6B92EF !important; color: #fff !important; }
+.btn-ft-outline { border-color: #6B92EF !important; background-color: #fff !important; color: #6B92EF !important; }
+.badge-outline-primary.ft { box-shadow: 0 0 0 1px #6B92EF inset; color: #6B92EF; }
+a.hover-ft:hover { color: #6B92EF !important; }
+
+/* Future Mind */
+.fc-fm { color: #F294EC !important; }
+.fc-fm-light { color: #FFD6FC !important; }
+.bg-fm { background-color: #F294EC !important; }
+.bg-fm-light { background-color: #FFD6FC !important; }
+.bd-fm { border-color: #F294EC !important; }
+.btn-fm { background-color: #F294EC !important; color: #fff !important; }
+.btn-fm-outline { border-color: #F294EC !important; background-color: #fff !important; color: #F294EC !important; }
+
+.sidenav.bg-dark .sidenav-link.active, .sidenav.bg-dark .sidenav-horizontal-prev.active, .sidenav.bg-dark .sidenav-horizontal-next.active {
+	color: #fff !important;
+	/*font-weight: 800 !important;*/
+}
+
+.sidenav-vertical .sidenav-inner>.sidenav-item {
+	margin: 0;
+}
+
+.sidenav-vertical .sidenav-menu .sidenav-link, .sidenav-vertical .sidenav-menu .sidenav-header {
+	padding-left: 2.5em;
+}
+
+.sidenav .sidenav-item.depth1.open.active > .sidenav-link.fc-tw-light { background-color: #43C5DD !important; }
+.sidenav .sidenav-item.depth1.open.active > .sidenav-link.fc-ft-light { background-color: #6B92EF !important; }
+.sidenav .sidenav-item.depth1.open.active > .sidenav-link.fc-fm-light { background-color: #F294EC !important; }
+
+.sidenav .sidenav-link.fc-tw-light.active { background-color: #43C5DD !important; }
+.sidenav .sidenav-link.fc-ft-light.active { background-color: #6B92EF !important; }
+.sidenav .sidenav-link.fc-fm-light.active { background-color: #F294EC !important; }
+
+.sidenav .sidenav-menu .sidenav-item.depth2 .sidenav-link.fc-tw-light.active { color: #425155 !important; background-color: #C6F4FC !important; }
+.sidenav .sidenav-menu .sidenav-item.depth2 .sidenav-link.fc-ft-light.active { color: #425155 !important; background-color: #D4E1FF !important; }
+.sidenav .sidenav-menu .sidenav-item.depth2 .sidenav-link.fc-fm-light.active { color: #425155 !important; background-color: #FFD6FC !important; }
+
+.sidenav-vertical .sidenav-menu {
+	padding-top: 0;
+}
+
+.nav-link.active { font-weight: 800 !important; }
+.archive-nav-fw { min-width: 220px !important; }
+
+.custom-control-input:checked ~ .custom-control-label::before {
+	border-color: #616161 !important;
+	background-color: #616161 !important;
+}
+.custom-control-input:checked ~ .custom-control-label.tw::before {
+	border-color: #43C5DD !important;
+	background-color: #43C5DD !important;
+}
+.custom-control-input:checked ~ .custom-control-label.ft::before {
+	border-color: #6B92EF !important;
+	background-color: #6B92EF !important;
+}
+.custom-control-input:checked ~ .custom-control-label.fm::before {
+	border-color: #F294EC !important;
+	background-color: #F294EC !important;
+}
+
+.switcher-input:checked ~ .switcher-indicator.tw {
+	background-color: #43C5DD !important;	
+}
+.switcher-input:checked ~ .switcher-indicator.ft {
+	background-color: #6B92EF !important;	
+}
+.switcher-input:checked ~ .switcher-indicator.fm {
+	background-color: #F294EC !important;	
+}
+
+/* Common Button, Text */
+/* 승인취소, 다운로드 */
+.btn-s1 {
+	color: #fff !important;
+	background-color: #9E9E9E !important;
+	border-color: #9E9E9E !important;
+}
+/* 검색, 수정, 등록 */
+.btn-s2 {
+	color: #fff !important;
+	background-color: #616161 !important;
+	border-color: #616161 !important;
+}
+.btn-s2-outline {
+	color: #616161 !important;
+	background-color: #FFF !important;
+	border-color: #616161 !important;
+}
+.badge-s2 { background-color: #616161 !important; color: #fff !important; }
+/* 삭제 */
+.btn-s3 {
+	color: #fff !important;
+	background-color: #B41500 !important;
+	border-color: #B41500 !important;
+}
+.badge-s3 { background-color: #B41500 !important; color: #fff !important; }
+/* 찜하기 */
+.btn-s4 {
+	color: #fff !important;
+	background-color: #DAA630 !important;
+	border-color: #DAA630 !important;
+}
+.btn-s4-off {
+	color: #000 !important;
+	background-color: #FFF !important;
+	border-color: #DAA630 !important;
+}
+.btn-s4-outline {
+	color: #DAA630 !important;
+	background-color: #FFF !important;
+	border-color: #DAA630 !important;
+}
+/* 공통 텍스트 */
+.fc-common {
+	color: #4E5155 !important;
+}
+
+.btn-fw { width: 70px !important; }

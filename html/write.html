@@ -1,0 +1,454 @@
+
+<!DOCTYPE html>
+
+<html lang="ko" class="light-style">
+
+<head>
+  <title>Allowto Of Darkness</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- Icon fonts -->
+  <link rel="stylesheet" href="./assets/vendor/fonts/fontawesome.css">
+  <link rel="stylesheet" href="./assets/vendor/fonts/ionicons.css">
+  <link rel="stylesheet" href="./assets/vendor/fonts/linearicons.css">
+  <link rel="stylesheet" href="./assets/vendor/fonts/open-iconic.css">
+  <link rel="stylesheet" href="./assets/vendor/fonts/pe-icon-7-stroke.css">
+
+  <!-- Core stylesheets -->
+  <link rel="stylesheet" href="./assets/vendor/css/rtl/bootstrap.css" class="theme-settings-bootstrap-css">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/vendor/css/rtl/appwork.css" class="theme-settings-appwork-css">
+  <link rel="stylesheet" href="./assets/vendor/css/rtl/theme-corporate.css" class="theme-settings-theme-css">
+  <link rel="stylesheet" href="./assets/vendor/css/rtl/colors.css" class="theme-settings-colors-css">
+  <link rel="stylesheet" href="./assets/vendor/css/rtl/uikit.css">
+  <link rel="stylesheet" href="./assets/css/demo.css">
+  <link rel="stylesheet" href="./assets/css/common.css">
+
+  <!-- common css -->
+  <link rel="stylesheet" href="./static/css/common.css?version=1637287798">
+  <link rel="stylesheet" href="./static/css/theme.css?version=1637287798">
+  <link rel="stylesheet" href="./static/css/custom.css?version=1637287798">
+  <link rel="stylesheet" href="./static/css/project.css?version=1637287798">
+  <link rel="stylesheet" href="./static/css/mind.css?version=1637287798">
+  <link rel="stylesheet" href="./static/css/interview.css?version=1637287798">
+
+  <!-- Load polyfills -->
+  <script src="./assets/vendor/js/polyfills.js"></script>
+  <script>document['documentMode']===10&&document.write('<script src="https://polyfill.io/v3/polyfill.min.js?features=Intl.~locale.en"><\/script>')</script>
+
+  <script src="./assets/vendor/js/material-ripple.js"></script>
+  <script src="./assets/vendor/js/layout-helpers.js"></script>
+
+  <!-- Theme settings -->
+  <!-- This file MUST be included after core stylesheets and layout-helpers.js in the <head> section -->
+  <!-- <script src="./assets/vendor/js/theme-settings.js"></script>
+  <script>
+    window.themeSettings = new ThemeSettings({
+      cssPath: 'assets/vendor/css/rtl/',
+      themesPath: 'assets/vendor/css/rtl/'
+    });
+  </script> -->
+
+  <!-- Core scripts -->
+  <script src="./assets/vendor/js/pace.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Libs -->
+  <link rel="stylesheet" href="./assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css">
+  <link rel="stylesheet" href="./assets/vendor/libs/datatables/datatables.css">
+  <link rel="stylesheet" href="./assets/vendor/libs/spinkit/spinkit.css">
+  <!-- Page -->
+  <link rel="stylesheet" href="./assets/vendor/css/pages/messages.css">
+
+</head>
+
+<body>
+  <div class="page-loader">
+    <div class="bg-primary"></div>
+  </div>
+
+  <!-- Layout wrapper -->
+  <div class="layout-wrapper layout-2">
+    <div class="layout-inner">
+
+      <!-- Layout sidenav -->
+      <div id="layout-sidenav" class="layout-sidenav sidenav sidenav-vertical bg-dark">
+
+        <!-- Brand demo (see assets/css/demo/demo.css) -->
+        <div class="app-brand demo">
+          <!-- <span class="app-brand-logo demo bg-primary">
+            <svg viewBox="0 0 148 80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient id="a" x1="46.49" x2="62.46" y1="53.39" y2="48.2" gradientUnits="userSpaceOnUse"><stop stop-opacity=".25" offset="0"></stop><stop stop-opacity=".1" offset=".3"></stop><stop stop-opacity="0" offset=".9"></stop></linearGradient><linearGradient id="e" x1="76.9" x2="92.64" y1="26.38" y2="31.49" xlink:href="#a"></linearGradient><linearGradient id="d" x1="107.12" x2="122.74" y1="53.41" y2="48.33" xlink:href="#a"></linearGradient></defs><path style="fill: #fff;" transform="translate(-.1)" d="M121.36,0,104.42,45.08,88.71,3.28A5.09,5.09,0,0,0,83.93,0H64.27A5.09,5.09,0,0,0,59.5,3.28L43.79,45.08,26.85,0H.1L29.43,76.74A5.09,5.09,0,0,0,34.19,80H53.39a5.09,5.09,0,0,0,4.77-3.26L74.1,35l16,41.74A5.09,5.09,0,0,0,94.82,80h18.95a5.09,5.09,0,0,0,4.76-3.24L148.1,0Z"></path><path transform="translate(-.1)" d="M52.19,22.73l-8.4,22.35L56.51,78.94a5,5,0,0,0,1.64-2.19l7.34-19.2Z" fill="url(#a)"></path><path transform="translate(-.1)" d="M95.73,22l-7-18.69a5,5,0,0,0-1.64-2.21L74.1,35l8.33,21.79Z" fill="url(#e)"></path><path transform="translate(-.1)" d="M112.73,23l-8.31,22.12,12.66,33.7a5,5,0,0,0,1.45-2l7.3-18.93Z" fill="url(#d)"></path></svg>
+          </span> -->
+          <a href="./" class="app-brand-text demo sidenav-text ml-2 main-font fw-sb lh-12">FUTURE -<br>INSITE.COM</a>
+          <!-- <a href="javascript:void(0)" class="layout-sidenav-toggle sidenav-link text-large ml-auto">
+            <i class="ion ion-md-menu align-middle"></i>
+          </a> -->
+        </div>
+
+        <div class="sidenav-divider mt-0"></div> 
+            <!-- Links -->
+            <ul class="sidenav-inner py-1">
+
+                <li class="sidenav-header small main-font fc-tw text-lg fw-eb">Archives</li>
+
+                <li class="sidenav-item depth1">
+                <a href="./archive/list/1" class="sidenav-link main-font fw-sb fc-tw-light active">
+                    <div>Darkness Archive</div>
+                </a>
+                </li>
+
+
+                <li class="sidenav-item depth1">
+                <a href="./archive/list/1" class="sidenav-link main-font fw-sb fc-tw-light">
+                    <div>Darkness Catagory</div>
+                </a>
+                </li>
+
+                <!--
+                <li class="sidenav-item depth1 ">
+                <a href="javascript:void(0)" class="sidenav-link main-font fw-sb sidenav-toggle fc-tw-light">
+                    <div>Trend Issues Analysis</div>
+                </a>
+
+                <ul class="sidenav-menu">
+                    <li class="sidenav-item depth2">
+                    <a href="./crawling/list/1" class="sidenav-link main-font fw-sb fc-tw-light">
+                        <div>Crawling</div>
+                    </a>
+                    </li>
+                    <li class="sidenav-item depth2">
+                    <a href="./roadmap" class="sidenav-link main-font fw-sb fc-tw-light">
+                        <div>Analysis</div>
+                    </a>
+                    </li>
+                </ul>
+                </li>
+                -->
+
+                
+                <li class="sidenav-divider mb-1"></li>
+                <li class="sidenav-header small font-weight-semibold main-font text-lg">Setting</li>
+
+                <li class="sidenav-item">
+                <a href="./member" class="sidenav-link main-font">
+                    <div>Config</div>
+                </a>
+                </li>
+
+                <li class="sidenav-item">
+                <a href="./region" class="sidenav-link main-font">
+                    <div>Language</div>
+                </a>
+                </li>  
+            </ul>
+            <!-- Links -->
+      </div>
+      <!-- / Layout sidenav -->
+
+      <!-- Layout container -->
+      <div class="layout-container">
+        <!-- Layout navbar -->
+        <nav class="layout-navbar navbar navbar-expand-lg align-items-lg-center bg-white container-p-x" id="layout-navbar">
+
+          <!-- Brand demo (see assets/css/demo/demo.css) -->
+          <a href="./" class="navbar-brand app-brand demo d-lg-none py-0 mr-4">
+            <!-- <span class="app-brand-logo demo bg-primary">
+              <svg viewBox="0 0 148 80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient id="a" x1="46.49" x2="62.46" y1="53.39" y2="48.2" gradientUnits="userSpaceOnUse"><stop stop-opacity=".25" offset="0"></stop><stop stop-opacity=".1" offset=".3"></stop><stop stop-opacity="0" offset=".9"></stop></linearGradient><linearGradient id="e" x1="76.9" x2="92.64" y1="26.38" y2="31.49" xlink:href="#a"></linearGradient><linearGradient id="d" x1="107.12" x2="122.74" y1="53.41" y2="48.33" xlink:href="#a"></linearGradient></defs><path style="fill: #fff;" transform="translate(-.1)" d="M121.36,0,104.42,45.08,88.71,3.28A5.09,5.09,0,0,0,83.93,0H64.27A5.09,5.09,0,0,0,59.5,3.28L43.79,45.08,26.85,0H.1L29.43,76.74A5.09,5.09,0,0,0,34.19,80H53.39a5.09,5.09,0,0,0,4.77-3.26L74.1,35l16,41.74A5.09,5.09,0,0,0,94.82,80h18.95a5.09,5.09,0,0,0,4.76-3.24L148.1,0Z"></path><path transform="translate(-.1)" d="M52.19,22.73l-8.4,22.35L56.51,78.94a5,5,0,0,0,1.64-2.19l7.34-19.2Z" fill="url(#a)"></path><path transform="translate(-.1)" d="M95.73,22l-7-18.69a5,5,0,0,0-1.64-2.21L74.1,35l8.33,21.79Z" fill="url(#e)"></path><path transform="translate(-.1)" d="M112.73,23l-8.31,22.12,12.66,33.7a5,5,0,0,0,1.45-2l7.3-18.93Z" fill="url(#d)"></path></svg>
+            </span> -->
+            <span class="app-brand-text demo font-weight-normal ml-2">KFDRI</span>
+          </a>
+
+          <!-- Sidenav toggle (see assets/css/demo/demo.css) -->
+          <div class="layout-sidenav-toggle navbar-nav d-lg-none align-items-lg-center mr-auto">
+            <a class="nav-item nav-link px-0 mr-lg-4" href="javascript:void(0)">
+              <i class="ion ion-md-menu text-large align-middle"></i>
+            </a>
+          </div>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#layout-navbar-collapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="navbar-collapse collapse" id="layout-navbar-collapse">
+            <!-- Divider -->
+            <hr class="d-lg-none w-100 my-2"> 
+
+            <div class="navbar-nav align-items-lg-center ml-auto"> 
+
+              <div class="demo-navbar-user nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                  <span class="d-inline-flex flex-lg-row-reverse align-items-center align-middle">
+                    <!-- <img src="./assets/img/avatars/1.png" alt class="d-block ui-w-30 rounded-circle"> -->
+                    <span class="px-1 mr-lg-2 ml-2 ml-lg-0">관리자(admin)</span>
+                  </span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <a href="./member/modify" class="dropdown-item"><i class="ion ion-ios-person text-primary"></i> &nbsp; 내정보수정</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="./mypage/favorites" class="dropdown-item"><i class="ion ion-ios-person text-primary"></i> &nbsp; 마이페이지</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="./auth/logout" class="dropdown-item"><i class="ion ion-ios-log-out text-danger"></i> &nbsp; 로그아웃</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- / Layout navbar -->
+
+        <!-- Layout content -->
+        <div class="layout-content"><div class="container-fluid flex-grow-1 container-p-y">
+
+  <h4 class="d-flex justify-content-between align-items-center w-100 font-weight-bold py-3 mb-4">
+    <div>Shade 등록</div>
+  </h4>
+
+  <div class="row">
+    <div class="col-lg-8">
+
+      <div class="card mb-4">
+        <div class="card-body">
+          <form method="post" name="frm_archive" enctype="multipart/form-data" action="/archive/regist_proc">
+            <input type="hidden" name="archive_section" value="3">
+            <input type="hidden" name="archive_type" value="1"> 
+
+             
+
+            <div class="form-group row">
+              <label class="col-form-label col-sm-3 text-sm-right">사이트명</label>
+              <div class="col-sm-9">
+                <input type="text" name="archive_name" class="form-control" placeholder="사이트명" required="true">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-form-label col-sm-3 text-sm-right">URL</label>
+              <div class="col-sm-9">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">http(s)://</span>
+                  </div>
+                  <input type="text" id="url1" name="archive_url" class="form-control" placeholder="URL" required="true"> 
+                </div>
+              </div>
+            </div>
+  
+
+            <div class="form-group row">
+              <label class="col-form-label col-sm-3 text-sm-right">썸네일 업로드</label>
+              <div class="col-sm-9">
+                <input type="file" name="archive_thumbnail_file" class="form-control" placeholder="썸네일 업로드">
+                <small class="text-danger">※ 이미지 사이즈 : 1200 x 900</small>
+              </div>
+            </div>  
+
+            <div class="form-group row">
+              <label class="col-form-label col-sm-3 text-sm-right">설명</label>
+              <div class="col-sm-9">
+                <textarea name="archive_desc" class="form-control" rows="5"></textarea> 
+                <small class="text-danger">※ 사이트 상세 설명</small>
+              </div>
+            </div> 
+
+            <div class="form-group row">
+                <label class="col-form-label col-sm-3 text-sm-right">카테고리</label>
+                <div class="col-sm-9">
+                  <textarea name="archive_desc" class="form-control" rows="3"></textarea>
+                  <small class="text-danger">※ 콤마로 구분(해시태그)</small>
+                </div>
+            </div> 
+
+            <div class="form-group row">
+              <label class="col-form-label col-sm-3 text-sm-right">승인</label>
+              <div class="col-sm-9">
+                <select class="custom-select" name="archive_type2" required="true">
+                    <option value="2" selected>승인</option>
+                    <option value="1">승인대기</option>
+                    </select>
+              </div>
+            </div>
+ 
+            
+            <div class="form-group row">
+              <div class="col-sm-9 ml-sm-auto">
+                <a href="./archive/list/3" class="btn btn-default">취소</a>
+                <button type="button" class="btn btn-primary btn-s2" onclick="check_archive_form();">등록</button>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<script>
+var blockUI_config = {
+  message: '<div class="sk-fold sk-primary mx-auto mb-4"><div class="sk-fold-cube"></div><div class="sk-fold-cube"></div><div class="sk-fold-cube"></div><div class="sk-fold-cube"></div></div><h5 class="text-body text-white">검색중</h5>',
+  css: {
+    backgroundColor: 'transparent',
+    border: '0',
+    zIndex: 9999999
+  },
+  overlayCSS:  {
+    backgroundColor: '#fff',
+    opacity: 0.6,
+    zIndex: 9999990
+  }
+};
+
+function get_thunbmail(btn)
+{
+  $.ajax({
+      url : '/archive/thumbnail',
+      type : 'POST',
+      dataType : 'json',
+      data : {
+          'url': 'http://' + $('[name=archive_url]').val()
+      },
+      beforeSend: function() {
+        $.blockUI(blockUI_config);
+      },
+      success: function(data)
+      {
+        if ( data.url ) {
+          $('[name=archive_thumbnail]').val(data.filename);
+          $('.thumbnail_area').html('<img src="' + data.url + '" class="img-fluid mt-2">');
+        }
+      },
+      complete: function() {
+          $.unblockUI();
+      }
+  });
+}
+
+function check_archive_form()
+{
+  if ( $('[name="archive_category[]"]:checked').length == 0 ) {
+    alert('카테고리를 선택해 주세요.');
+    return false;
+  }
+  else if ( $('[name=archive_name]').val() == '' ) {
+    alert('사이트명을 입력해 주세요.');
+    $('[name=archive_name]').focus();
+    return false;
+  }
+  else if ( $('[name=archive_url]').val() == '' ) {
+    alert('URL을 입력해 주세요.');
+    $('[name=archive_url]').focus();
+    return false;
+  }
+  else if ( $('[name=archive_desc]').val() == '' ) {
+    alert('설명을 입력해 주세요.');
+    $('[name=archive_desc]').focus();
+    return false;
+  }
+  else if ( $('[name="archive_type3[]"]:checked').length == 0 ) {
+    alert('국내/해외 여부를 선택해 주세요.');
+    return false;
+  }
+  else if ( $('[name="archive_type4[]"]').length > 0 && $('[name="archive_type4[]"]:checked').length == 0 ) {
+    alert('무료/유료 여부를 선택해 주세요.');
+    return false;
+  }
+  else if ( $('[name=archive_file_date]').length > 0 && $('[name=archive_file_date]').val() == '' ) {
+    alert('발행일을 입력해 주세요.');
+    $('[name=archive_file_date]').focus();
+    return false;
+  }
+  else if ( $('[name=archive_file_author]').length > 0 && $('[name=archive_file_author]').val() == '' ) {
+    alert('발행기관/저자를 입력해 주세요.');
+    $('[name=archive_file_author]').focus();
+    return false;
+  }
+  else if ( $('[name=archive_file]').length > 0 && $('[name=archive_file]').val() == '' ) {
+    alert('파일을 선택해 주세요.');
+    return false;
+  }
+  else {
+    $('[name=frm_archive]').submit();
+  }
+}
+</script>
+
+          <!-- Layout footer -->
+          <nav class="layout-footer footer bg-footer-theme">
+            <div class="container-fluid d-flex flex-wrap justify-content-between text-center container-p-x pb-3">
+              <div class="pt-3">
+                <span>Powered by <a href="https://handle.im" target="_blank" class="footer-link font-weight-bolder">SOULJAM WORKS</a>.</span>
+              </div>
+              <div class="pt-3">
+                @ <span class="footer-text font-weight-bolder">KFDRI</span>
+              </div>
+            </div>
+          </nav>
+          <!-- / Layout footer -->
+
+        </div>
+        <!-- Layout content -->
+
+      </div>
+      <!-- / Layout container -->
+
+    </div>
+
+    <!-- Overlay -->
+    <div class="layout-overlay layout-sidenav-toggle"></div>
+  </div>
+  <!-- / Layout wrapper -->
+
+  <!-- Core scripts -->
+  <script src="./assets/vendor/libs/popper/popper.js"></script>
+  <script src="./assets/vendor/js/bootstrap.js"></script>
+  <script src="./assets/vendor/js/sidenav.js"></script>
+
+  <!-- Libs -->
+  <script src="./assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+  <script src="./assets/vendor/libs/chartjs/chartjs.js"></script>
+  <script src="./assets/vendor/libs/datatables/datatables.js"></script>
+  <script src="./assets/vendor/libs/block-ui/block-ui.js"></script>
+
+  <!-- Demo -->
+  <script src="./assets/js/demo.js"></script>
+  <!-- <script src="./assets/js/dashboards_dashboard-1.js"></script> -->
+  <!-- <script src="./assets/js/tables_datatables.js"></script> -->
+
+  <!-- MonthPicker -->
+  <script src="./assets/js/jquery.mtz.monthpicker.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css">
+  <!-- DatePicker -->
+  <!-- <script src="./jquery-ui-1.12.1/datepicker-ko.js"></script> -->
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  <!-- common -->
+  <script src="./static/js/common.js"></script>
+  <script src="./static/js/modal.js"></script>
+  <script src="./static/js/main.js"></script>
+  <script src="./static/js/ajax.js"></script>
+
+
+    <!-- include libraries(jQuery, bootstrap) -->
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+    <!-- include summernote css/js -->
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+
+
+</body>
+
+</html>

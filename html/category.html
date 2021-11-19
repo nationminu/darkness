@@ -1,0 +1,2566 @@
+
+<!DOCTYPE html>
+
+<html lang="ko" class="light-style">
+
+<head>
+  <title>Future-insite.com</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- Icon fonts -->
+  <link rel="stylesheet" href="./assets/vendor/fonts/fontawesome.css">
+  <link rel="stylesheet" href="./assets/vendor/fonts/ionicons.css">
+  <link rel="stylesheet" href="./assets/vendor/fonts/linearicons.css">
+  <link rel="stylesheet" href="./assets/vendor/fonts/open-iconic.css">
+  <link rel="stylesheet" href="./assets/vendor/fonts/pe-icon-7-stroke.css">
+
+  <!-- Core stylesheets -->
+  <link rel="stylesheet" href="./assets/vendor/css/rtl/bootstrap.css" class="theme-settings-bootstrap-css">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/vendor/css/rtl/appwork.css" class="theme-settings-appwork-css">
+  <link rel="stylesheet" href="./assets/vendor/css/rtl/theme-corporate.css" class="theme-settings-theme-css">
+  <link rel="stylesheet" href="./assets/vendor/css/rtl/colors.css" class="theme-settings-colors-css">
+  <link rel="stylesheet" href="./assets/vendor/css/rtl/uikit.css">
+  <link rel="stylesheet" href="./assets/css/demo.css">
+  <link rel="stylesheet" href="./assets/css/common.css">
+
+  <!-- common css -->
+  <link rel="stylesheet" href="./static/css/common.css?version=1637299030">
+  <link rel="stylesheet" href="./static/css/theme.css?version=1637299030">
+  <link rel="stylesheet" href="./static/css/custom.css?version=1637299030">
+  <link rel="stylesheet" href="./static/css/project.css?version=1637299030">
+  <link rel="stylesheet" href="./static/css/mind.css?version=1637299030">
+  <link rel="stylesheet" href="./static/css/interview.css?version=1637299030">
+
+  <!-- Load polyfills -->
+  <script src="./assets/vendor/js/polyfills.js"></script>
+  <script>document['documentMode']===10&&document.write('<script src="https://polyfill.io/v3/polyfill.min.js?features=Intl.~locale.en"><\/script>')</script>
+
+  <script src="./assets/vendor/js/material-ripple.js"></script>
+  <script src="./assets/vendor/js/layout-helpers.js"></script>
+
+  <!-- Theme settings -->
+  <!-- This file MUST be included after core stylesheets and layout-helpers.js in the <head> section -->
+  <!-- <script src="./assets/vendor/js/theme-settings.js"></script>
+  <script>
+    window.themeSettings = new ThemeSettings({
+      cssPath: 'assets/vendor/css/rtl/',
+      themesPath: 'assets/vendor/css/rtl/'
+    });
+  </script> -->
+
+  <!-- Core scripts -->
+  <script src="./assets/vendor/js/pace.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Libs -->
+  <link rel="stylesheet" href="./assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css">
+  <link rel="stylesheet" href="./assets/vendor/libs/datatables/datatables.css">
+  <link rel="stylesheet" href="./assets/vendor/libs/spinkit/spinkit.css">
+  <!-- Page -->
+  <link rel="stylesheet" href="./assets/vendor/css/pages/messages.css">
+
+</head>
+
+<body>
+  <div class="page-loader">
+    <div class="bg-primary"></div>
+  </div>
+
+  <!-- Layout wrapper -->
+  <div class="layout-wrapper layout-2">
+    <div class="layout-inner">
+
+      <!-- Layout sidenav -->
+      <div id="layout-sidenav" class="layout-sidenav sidenav sidenav-vertical bg-dark">
+
+        <!-- Brand demo (see assets/css/demo/demo.css) -->
+        <div class="app-brand demo">
+          <!-- <span class="app-brand-logo demo bg-primary">
+            <svg viewBox="0 0 148 80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient id="a" x1="46.49" x2="62.46" y1="53.39" y2="48.2" gradientUnits="userSpaceOnUse"><stop stop-opacity=".25" offset="0"></stop><stop stop-opacity=".1" offset=".3"></stop><stop stop-opacity="0" offset=".9"></stop></linearGradient><linearGradient id="e" x1="76.9" x2="92.64" y1="26.38" y2="31.49" xlink:href="#a"></linearGradient><linearGradient id="d" x1="107.12" x2="122.74" y1="53.41" y2="48.33" xlink:href="#a"></linearGradient></defs><path style="fill: #fff;" transform="translate(-.1)" d="M121.36,0,104.42,45.08,88.71,3.28A5.09,5.09,0,0,0,83.93,0H64.27A5.09,5.09,0,0,0,59.5,3.28L43.79,45.08,26.85,0H.1L29.43,76.74A5.09,5.09,0,0,0,34.19,80H53.39a5.09,5.09,0,0,0,4.77-3.26L74.1,35l16,41.74A5.09,5.09,0,0,0,94.82,80h18.95a5.09,5.09,0,0,0,4.76-3.24L148.1,0Z"></path><path transform="translate(-.1)" d="M52.19,22.73l-8.4,22.35L56.51,78.94a5,5,0,0,0,1.64-2.19l7.34-19.2Z" fill="url(#a)"></path><path transform="translate(-.1)" d="M95.73,22l-7-18.69a5,5,0,0,0-1.64-2.21L74.1,35l8.33,21.79Z" fill="url(#e)"></path><path transform="translate(-.1)" d="M112.73,23l-8.31,22.12,12.66,33.7a5,5,0,0,0,1.45-2l7.3-18.93Z" fill="url(#d)"></path></svg>
+          </span> -->
+          <a href="./" class="app-brand-text demo sidenav-text ml-2 main-font fw-sb lh-12">FUTURE -<br>INSITE.COM</a>
+          <!-- <a href="javascript:void(0)" class="layout-sidenav-toggle sidenav-link text-large ml-auto">
+            <i class="ion ion-md-menu align-middle"></i>
+          </a> -->
+        </div>
+
+        <div class="sidenav-divider mt-0"></div>
+
+        <!-- Links -->
+        <ul class="sidenav-inner py-1">
+
+            <li class="sidenav-header small main-font fc-tw text-lg fw-eb">Archives</li>
+
+            <li class="sidenav-item depth1">
+            <a href="./archive/list/1" class="sidenav-link main-font fw-sb fc-tw-light">
+                <div>Darkness Archive</div>
+            </a>
+            </li>
+
+
+            <li class="sidenav-item depth1">
+            <a href="./archive/list/1" class="sidenav-link main-font fw-sb fc-tw-light active">
+                <div>Darkness Catagory</div>
+            </a>
+            </li>
+
+            <!--
+            <li class="sidenav-item depth1 ">
+            <a href="javascript:void(0)" class="sidenav-link main-font fw-sb sidenav-toggle fc-tw-light">
+                <div>Trend Issues Analysis</div>
+            </a>
+
+            <ul class="sidenav-menu">
+                <li class="sidenav-item depth2">
+                <a href="./crawling/list/1" class="sidenav-link main-font fw-sb fc-tw-light">
+                    <div>Crawling</div>
+                </a>
+                </li>
+                <li class="sidenav-item depth2">
+                <a href="./roadmap" class="sidenav-link main-font fw-sb fc-tw-light">
+                    <div>Analysis</div>
+                </a>
+                </li>
+            </ul>
+            </li>
+            -->
+
+            
+            <li class="sidenav-divider mb-1"></li>
+            <li class="sidenav-header small font-weight-semibold main-font text-lg">Setting</li>
+
+            <li class="sidenav-item">
+            <a href="./member" class="sidenav-link main-font">
+                <div>Config</div>
+            </a>
+            </li>
+
+            <li class="sidenav-item">
+            <a href="./region" class="sidenav-link main-font">
+                <div>Language</div>
+            </a>
+            </li>  
+        </ul>
+        <!-- Links -->
+      </div>
+      <!-- / Layout sidenav -->
+
+      <!-- Layout container -->
+      <div class="layout-container">
+        <!-- Layout navbar -->
+        <nav class="layout-navbar navbar navbar-expand-lg align-items-lg-center bg-white container-p-x" id="layout-navbar">
+
+          <!-- Brand demo (see assets/css/demo/demo.css) -->
+          <a href="./" class="navbar-brand app-brand demo d-lg-none py-0 mr-4">
+            <!-- <span class="app-brand-logo demo bg-primary">
+              <svg viewBox="0 0 148 80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient id="a" x1="46.49" x2="62.46" y1="53.39" y2="48.2" gradientUnits="userSpaceOnUse"><stop stop-opacity=".25" offset="0"></stop><stop stop-opacity=".1" offset=".3"></stop><stop stop-opacity="0" offset=".9"></stop></linearGradient><linearGradient id="e" x1="76.9" x2="92.64" y1="26.38" y2="31.49" xlink:href="#a"></linearGradient><linearGradient id="d" x1="107.12" x2="122.74" y1="53.41" y2="48.33" xlink:href="#a"></linearGradient></defs><path style="fill: #fff;" transform="translate(-.1)" d="M121.36,0,104.42,45.08,88.71,3.28A5.09,5.09,0,0,0,83.93,0H64.27A5.09,5.09,0,0,0,59.5,3.28L43.79,45.08,26.85,0H.1L29.43,76.74A5.09,5.09,0,0,0,34.19,80H53.39a5.09,5.09,0,0,0,4.77-3.26L74.1,35l16,41.74A5.09,5.09,0,0,0,94.82,80h18.95a5.09,5.09,0,0,0,4.76-3.24L148.1,0Z"></path><path transform="translate(-.1)" d="M52.19,22.73l-8.4,22.35L56.51,78.94a5,5,0,0,0,1.64-2.19l7.34-19.2Z" fill="url(#a)"></path><path transform="translate(-.1)" d="M95.73,22l-7-18.69a5,5,0,0,0-1.64-2.21L74.1,35l8.33,21.79Z" fill="url(#e)"></path><path transform="translate(-.1)" d="M112.73,23l-8.31,22.12,12.66,33.7a5,5,0,0,0,1.45-2l7.3-18.93Z" fill="url(#d)"></path></svg>
+            </span> -->
+            <span class="app-brand-text demo font-weight-normal ml-2">KFDRI</span>
+          </a>
+
+          <!-- Sidenav toggle (see assets/css/demo/demo.css) -->
+          <div class="layout-sidenav-toggle navbar-nav d-lg-none align-items-lg-center mr-auto">
+            <a class="nav-item nav-link px-0 mr-lg-4" href="javascript:void(0)">
+              <i class="ion ion-md-menu text-large align-middle"></i>
+            </a>
+          </div>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#layout-navbar-collapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="navbar-collapse collapse" id="layout-navbar-collapse">
+            <!-- Divider -->
+            <hr class="d-lg-none w-100 my-2">
+
+            <!-- <div class="navbar-nav align-items-lg-center">
+              <label class="nav-item navbar-text navbar-search-box p-0 active">
+                <i class="ion ion-ios-search navbar-icon align-middle"></i>
+                <span class="navbar-search-input pl-2">
+                  <input type="text" class="form-control navbar-text mx-2" placeholder="Search..." style="width:200px">
+                </span>
+              </label>
+            </div> -->
+
+            <div class="navbar-nav align-items-lg-center ml-auto">
+              <!-- <div class="demo-navbar-notifications nav-item dropdown mr-lg-3">
+                <a class="nav-link dropdown-toggle hide-arrow" href="#" data-toggle="dropdown">
+                  <i class="ion ion-md-notifications-outline navbar-icon align-middle"></i>
+                  <span class="badge badge-primary badge-dot indicator"></span>
+                  <span class="d-lg-none align-middle">&nbsp; Notifications</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <div class="bg-primary text-center text-white font-weight-bold p-3">
+                    4 New Notifications
+                  </div>
+                  <div class="list-group list-group-flush">
+                    <a href="javascript:void(0)" class="list-group-item list-group-item-action media d-flex align-items-center">
+                      <div class="ui-icon ui-icon-sm ion ion-md-home bg-secondary border-0 text-white"></div>
+                      <div class="media-body line-height-condenced ml-3">
+                        <div class="text-body">Login from 192.168.1.1</div>
+                        <div class="text-light small mt-1">
+                          Aliquam ex eros, imperdiet vulputate hendrerit et.
+                        </div>
+                        <div class="text-light small mt-1">12h ago</div>
+                      </div>
+                    </a>
+
+                    <a href="javascript:void(0)" class="list-group-item list-group-item-action media d-flex align-items-center">
+                      <div class="ui-icon ui-icon-sm ion ion-md-person-add bg-info border-0 text-white"></div>
+                      <div class="media-body line-height-condenced ml-3">
+                        <div class="text-body">You have <strong>4</strong> new followers</div>
+                        <div class="text-light small mt-1">
+                          Phasellus nunc nisl, posuere cursus pretium nec, dictum vehicula tellus.
+                        </div>
+                      </div>
+                    </a>
+
+                    <a href="javascript:void(0)" class="list-group-item list-group-item-action media d-flex align-items-center">
+                      <div class="ui-icon ui-icon-sm ion ion-md-power bg-danger border-0 text-white"></div>
+                      <div class="media-body line-height-condenced ml-3">
+                        <div class="text-body">Server restarted</div>
+                        <div class="text-light small mt-1">
+                          19h ago
+                        </div>
+                      </div>
+                    </a>
+
+                    <a href="javascript:void(0)" class="list-group-item list-group-item-action media d-flex align-items-center">
+                      <div class="ui-icon ui-icon-sm ion ion-md-warning bg-warning border-0 text-body"></div>
+                      <div class="media-body line-height-condenced ml-3">
+                        <div class="text-body">99% server load</div>
+                        <div class="text-light small mt-1">
+                          Etiam nec fringilla magna. Donec mi metus.
+                        </div>
+                        <div class="text-light small mt-1">
+                          20h ago
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <a href="javascript:void(0)" class="d-block text-center text-light small p-2 my-1">Show all notifications</a>
+                </div>
+              </div> -->
+
+              <!-- <div class="demo-navbar-messages nav-item dropdown mr-lg-3">
+                <a class="nav-link dropdown-toggle hide-arrow" href="#" data-toggle="dropdown">
+                  <i class="ion ion-ios-mail navbar-icon align-middle"></i>
+                  <span class="badge badge-primary badge-dot indicator"></span>
+                  <span class="d-lg-none align-middle">&nbsp; Messages</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <div class="bg-primary text-center text-white font-weight-bold p-3">
+                    4 New Messages
+                  </div>
+                  <div class="list-group list-group-flush">
+                    <a href="javascript:void(0)" class="list-group-item list-group-item-action media d-flex align-items-center">
+                      <img src="./assets/img/avatars/6-small.png" class="d-block ui-w-40 rounded-circle" alt>
+                      <div class="media-body ml-3">
+                        <div class="text-body line-height-condenced">Sit meis deleniti eu, pri vidit meliore docendi ut.</div>
+                        <div class="text-light small mt-1">
+                          Mae Gibson &nbsp;·&nbsp; 58m ago
+                        </div>
+                      </div>
+                    </a>
+
+                    <a href="javascript:void(0)" class="list-group-item list-group-item-action media d-flex align-items-center">
+                      <img src="./assets/img/avatars/4-small.png" class="d-block ui-w-40 rounded-circle" alt>
+                      <div class="media-body ml-3">
+                        <div class="text-body line-height-condenced">Mea et legere fuisset, ius amet purto luptatum te.</div>
+                        <div class="text-light small mt-1">
+                          Kenneth Frazier &nbsp;·&nbsp; 1h ago
+                        </div>
+                      </div>
+                    </a>
+
+                    <a href="javascript:void(0)" class="list-group-item list-group-item-action media d-flex align-items-center">
+                      <img src="./assets/img/avatars/5-small.png" class="d-block ui-w-40 rounded-circle" alt>
+                      <div class="media-body ml-3">
+                        <div class="text-body line-height-condenced">Sit meis deleniti eu, pri vidit meliore docendi ut.</div>
+                        <div class="text-light small mt-1">
+                          Nelle Maxwell &nbsp;·&nbsp; 2h ago
+                        </div>
+                      </div>
+                    </a>
+
+                    <a href="javascript:void(0)" class="list-group-item list-group-item-action media d-flex align-items-center">
+                      <img src="./assets/img/avatars/11-small.png" class="d-block ui-w-40 rounded-circle" alt>
+                      <div class="media-body ml-3">
+                        <div class="text-body line-height-condenced">Lorem ipsum dolor sit amet, vis erat denique in, dicunt prodesset te vix.</div>
+                        <div class="text-light small mt-1">
+                          Belle Ross &nbsp;·&nbsp; 5h ago
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <a href="javascript:void(0)" class="d-block text-center text-light small p-2 my-1">Show all messages</a>
+                </div>
+              </div> -->
+
+              <!-- Divider -->
+              <!-- <div class="nav-item d-none d-lg-block text-big font-weight-light line-height-1 opacity-25 mr-3 ml-1">|</div> -->
+
+              <div class="demo-navbar-user nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                  <span class="d-inline-flex flex-lg-row-reverse align-items-center align-middle">
+                    <!-- <img src="./assets/img/avatars/1.png" alt class="d-block ui-w-30 rounded-circle"> -->
+                    <span class="px-1 mr-lg-2 ml-2 ml-lg-0">관리자(admin)</span>
+                  </span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <a href="./member/modify" class="dropdown-item"><i class="ion ion-ios-person text-primary"></i> &nbsp; 내정보수정</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="./mypage/favorites" class="dropdown-item"><i class="ion ion-ios-person text-primary"></i> &nbsp; 마이페이지</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="./auth/logout" class="dropdown-item"><i class="ion ion-ios-log-out text-danger"></i> &nbsp; 로그아웃</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- / Layout navbar -->
+
+        <!-- Layout content -->
+        <div class="layout-content"><div class="container-fluid flex-grow-1 container-p-y">
+
+    <div class="row m-3">
+        <div class="col-lg-12">
+            <div class="col-sm-3 fl-left">
+                <select class="form-control fl-left" id="select_date" onchange="keyword_date_select(this)">
+                    <option value="1">Last 3 Months</option>
+                    <option value="2" selected>Last 6 Months</option>
+                    <option value="3">Last 9 Months</option>
+                    <option value="4">Last 1 Years</option>
+                    <option value="5">Last 3 Years</option>
+                    <option value="6">맞춤기간설정</option>
+                </select>
+            </div>
+            <div class="col-sm-3 fl-left">
+                <select class="form-control fl-left" onchange="category_keyword_select(this)">
+                    <option value="">전체(기본)</option>
+                                        <option value="1">사회</option>
+                                        <option value="2">기술</option>
+                                        <option value="3">경제</option>
+                                        <option value="4">환경</option>
+                                        <option value="5">정치</option>
+                                    </select>
+            </div>
+            <div class="col-sm-6 fl-left">
+                <a href="./keyword" class="btn btn-primary btn-lg fl-right bg-tw" style="border-radius: 25px;">키워드 관리</a>
+            </div>
+        </div>
+    </div>
+    <div class="row m-3">
+        <div class="col-lg-12">
+            <div style="height: 100px; overflow: auto;">
+                <input type="hidden" id="keyword_value" name="keyword_value[]">
+                                <button type="button" class="btn keyword_btn keyword_btn26 btn-tw-outline" 
+                    data-value="26" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', 'ITS', this)">
+                ITS                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn98 btn-tw-outline" 
+                    data-value="98" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', 'Battery', this)">
+                Battery                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn13 btn-tw-outline" 
+                    data-value="13" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4="14"
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '온라인', this)">
+                온라인                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn118 btn-tw-outline" 
+                    data-value="118" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3=""
+                    data-category4="14"
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', 'NASA', this)">
+                NASA                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn28 btn-tw-outline" 
+                    data-value="28" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4="14"
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '데이터', this)">
+                데이터                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn1 btn-tw-outline" 
+                    data-value="1" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4="14"
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '코로나19', this)">
+                코로나19                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn90 btn-tw-outline" 
+                    data-value="90" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', 'Connectivity', this)">
+                Connectivity                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn115 btn-tw-outline" 
+                    data-value="115" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '플랫폼', this)">
+                플랫폼                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn68 btn-tw-outline" 
+                    data-value="68" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4="14"
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '전기차', this)">
+                전기차                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn84 btn-tw-outline" 
+                    data-value="84" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '인공지능', this)">
+                인공지능                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn29 btn-tw-outline" 
+                    data-value="29" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4="14"
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '네트워크', this)">
+                네트워크                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn126 btn-tw-outline" 
+                    data-value="126" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '스마트폰', this)">
+                스마트폰                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn78 btn-tw-outline" 
+                    data-value="78" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '클라우드', this)">
+                클라우드                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn92 btn-tw-outline" 
+                    data-value="92" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', 'IoT', this)">
+                IoT                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn119 btn-tw-outline" 
+                    data-value="119" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '구글', this)">
+                구글                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn99 btn-tw-outline" 
+                    data-value="99" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '카메라', this)">
+                카메라                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn81 btn-tw-outline" 
+                    data-value="81" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3=""
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '컴퓨팅', this)">
+                컴퓨팅                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn116 btn-tw-outline" 
+                    data-value="116" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '애플', this)">
+                애플                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn59 btn-tw-outline" 
+                    data-value="59" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', 'E-commerce', this)">
+                E-commerce                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn103 btn-tw-outline" 
+                    data-value="103" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3=""
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '자동화', this)">
+                자동화                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn23 btn-tw-outline" 
+                    data-value="23" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3=""
+                    data-category4=""
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '백신', this)">
+                백신                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn14 btn-tw-outline" 
+                    data-value="14" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', 'Assisted', this)">
+                Assisted                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn24 btn-tw-outline" 
+                    data-value="24" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '빅데이터', this)">
+                빅데이터                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn89 btn-tw-outline" 
+                    data-value="89" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '인포테인먼트', this)">
+                인포테인먼트                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn3 btn-tw-outline" 
+                    data-value="3" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '비대면', this)">
+                비대면                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn121 btn-tw-outline" 
+                    data-value="121" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '테슬라', this)">
+                테슬라                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn117 btn-tw-outline" 
+                    data-value="117" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '아마존', this)">
+                아마존                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn125 btn-tw-outline" 
+                    data-value="125" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4="14"
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '4차 산업혁명', this)">
+                4차 산업혁명                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn39 btn-tw-outline" 
+                    data-value="39" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', 'Millennial', this)">
+                Millennial                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn109 btn-tw-outline" 
+                    data-value="109" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3=""
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '증강현실', this)">
+                증강현실                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn73 btn-tw-outline" 
+                    data-value="73" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '드론', this)">
+                드론                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn96 btn-tw-outline" 
+                    data-value="96" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3=""
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', 'Wearables', this)">
+                Wearables                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn110 btn-tw-outline" 
+                    data-value="110" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3=""
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '가상현실', this)">
+                가상현실                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn53 btn-tw-outline" 
+                    data-value="53" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3=""
+                    data-category4=""
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '라이프 스타일', this)">
+                라이프 스타일                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn2 btn-tw-outline" 
+                    data-value="2" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '사회적 거리두기', this)">
+                사회적 거리두기                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn149 btn-tw-outline" 
+                    data-value="149" 
+                    data-category1="" 
+                    data-category2=""
+                    data-category3=""
+                    data-category4="14"
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '미세먼지', this)">
+                미세먼지                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn52 btn-tw-outline" 
+                    data-value="52" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3=""
+                    data-category4="14"
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', 'ESG', this)">
+                ESG                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn139 btn-tw-outline" 
+                    data-value="139" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3=""
+                    data-category4=""
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '블록체인', this)">
+                블록체인                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn22 btn-tw-outline" 
+                    data-value="22" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3="13"
+                    data-category4="14"
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '불안', this)">
+                불안                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn50 btn-tw-outline" 
+                    data-value="50" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', 'CSR', this)">
+                CSR                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn82 btn-tw-outline" 
+                    data-value="82" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3=""
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', 'Computer Vision', this)">
+                Computer Vision                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn131 btn-tw-outline" 
+                    data-value="131" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '소셜 미디어', this)">
+                소셜 미디어                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn152 btn-tw-outline" 
+                    data-value="152" 
+                    data-category1="" 
+                    data-category2=""
+                    data-category3=""
+                    data-category4="14"
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '지진', this)">
+                지진                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn147 btn-tw-outline" 
+                    data-value="147" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3=""
+                    data-category4="14"
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '기후 변화', this)">
+                기후 변화                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn134 btn-tw-outline" 
+                    data-value="134" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '고객 경험', this)">
+                고객 경험                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn76 btn-tw-outline" 
+                    data-value="76" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', 'MaaS', this)">
+                MaaS                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn145 btn-tw-outline" 
+                    data-value="145" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3="13"
+                    data-category4="14"
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '지속가능성', this)">
+                지속가능성                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn77 btn-tw-outline" 
+                    data-value="77" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', 'MoD', this)">
+                MoD                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn85 btn-tw-outline" 
+                    data-value="85" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '음성인식', this)">
+                음성인식                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn105 btn-tw-outline" 
+                    data-value="105" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3="13"
+                    data-category4="14"
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '저탄소', this)">
+                저탄소                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn58 btn-tw-outline" 
+                    data-value="58" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '고령화', this)">
+                고령화                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn101 btn-tw-outline" 
+                    data-value="101" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3=""
+                    data-category4=""
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', 'V2X', this)">
+                V2X                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn16 btn-tw-outline" 
+                    data-value="16" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3=""
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', 'mRNA', this)">
+                mRNA                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn31 btn-tw-outline" 
+                    data-value="31" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3=""
+                    data-category4="14"
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '다양성', this)">
+                다양성                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn136 btn-tw-outline" 
+                    data-value="136" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4="14"
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '웰빙', this)">
+                웰빙                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn156 btn-tw-outline" 
+                    data-value="156" 
+                    data-category1="" 
+                    data-category2=""
+                    data-category3=""
+                    data-category4="14"
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '일회용', this)">
+                일회용                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn66 btn-tw-outline" 
+                    data-value="66" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4="14"
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '수소차', this)">
+                수소차                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn130 btn-tw-outline" 
+                    data-value="130" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3=""
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '개인화', this)">
+                개인화                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn144 btn-tw-outline" 
+                    data-value="144" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '불황', this)">
+                불황                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn129 btn-tw-outline" 
+                    data-value="129" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '로보틱스', this)">
+                로보틱스                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn62 btn-tw-outline" 
+                    data-value="62" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '핀테크', this)">
+                핀테크                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn169 btn-tw-outline" 
+                    data-value="169" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3=""
+                    data-category4="14"
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '도시화', this)">
+                도시화                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn112 btn-tw-outline" 
+                    data-value="112" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3=""
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '메타버스', this)">
+                메타버스                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn113 btn-tw-outline" 
+                    data-value="113" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3=""
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '홀로그램', this)">
+                홀로그램                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn100 btn-tw-outline" 
+                    data-value="100" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3=""
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '디지털 트윈', this)">
+                디지털 트윈                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn88 btn-tw-outline" 
+                    data-value="88" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3=""
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', 'Deepfake', this)">
+                Deepfake                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn72 btn-tw-outline" 
+                    data-value="72" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3=""
+                    data-category4="14"
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '하이브리드 자동차', this)">
+                하이브리드 자동차                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn140 btn-tw-outline" 
+                    data-value="140" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3=""
+                    data-category4=""
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '오픈 소스', this)">
+                오픈 소스                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn25 btn-tw-outline" 
+                    data-value="25" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '데이터 플랫폼', this)">
+                데이터 플랫폼                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn20 btn-tw-outline" 
+                    data-value="20" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', 'Gene Therapy', this)">
+                Gene Therapy                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn91 btn-tw-outline" 
+                    data-value="91" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '스마트 홈', this)">
+                스마트 홈                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn133 btn-tw-outline" 
+                    data-value="133" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '인플루언서', this)">
+                인플루언서                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn74 btn-tw-outline" 
+                    data-value="74" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', 'UAM', this)">
+                UAM                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn40 btn-tw-outline" 
+                    data-value="40" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', 'Boomer', this)">
+                Boomer                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn79 btn-tw-outline" 
+                    data-value="79" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3=""
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '양자 컴퓨터', this)">
+                양자 컴퓨터                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn46 btn-tw-outline" 
+                    data-value="46" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3=""
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '양극화', this)">
+                양극화                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn164 btn-tw-outline" 
+                    data-value="164" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3=""
+                    data-category4="14"
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '친환경 소재', this)">
+                친환경 소재                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn32 btn-tw-outline" 
+                    data-value="32" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3=""
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '진정성', this)">
+                진정성                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn151 btn-tw-outline" 
+                    data-value="151" 
+                    data-category1="" 
+                    data-category2=""
+                    data-category3=""
+                    data-category4="14"
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '해수면 상승', this)">
+                해수면 상승                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn44 btn-tw-outline" 
+                    data-value="44" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3=""
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '레트로', this)">
+                레트로                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn43 btn-tw-outline" 
+                    data-value="43" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '뉴노멀', this)">
+                뉴노멀                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn97 btn-tw-outline" 
+                    data-value="97" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3=""
+                    data-category4="14"
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '연료 전지', this)">
+                연료 전지                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn155 btn-tw-outline" 
+                    data-value="155" 
+                    data-category1="" 
+                    data-category2=""
+                    data-category3=""
+                    data-category4="14"
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '환경 오염', this)">
+                환경 오염                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn57 btn-tw-outline" 
+                    data-value="57" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '저출산', this)">
+                저출산                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn93 btn-tw-outline" 
+                    data-value="93" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', 'M2M', this)">
+                M2M                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn37 btn-tw-outline" 
+                    data-value="37" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3=""
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '교외', this)">
+                교외                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn165 btn-tw-outline" 
+                    data-value="165" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3="13"
+                    data-category4="14"
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '비건', this)">
+                비건                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn142 btn-tw-outline" 
+                    data-value="142" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '공유경제', this)">
+                공유경제                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn102 btn-tw-outline" 
+                    data-value="102" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '스마트 팩토리', this)">
+                스마트 팩토리                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn160 btn-tw-outline" 
+                    data-value="160" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3=""
+                    data-category4="14"
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '온실 가스', this)">
+                온실 가스                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn87 btn-tw-outline" 
+                    data-value="87" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3=""
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '생체인식', this)">
+                생체인식                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn38 btn-tw-outline" 
+                    data-value="38" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', 'Z세대', this)">
+                Z세대                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn120 btn-tw-outline" 
+                    data-value="120" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', 'Space X', this)">
+                Space X                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn21 btn-tw-outline" 
+                    data-value="21" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3=""
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '정신건강', this)">
+                정신건강                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn83 btn-tw-outline" 
+                    data-value="83" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3=""
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '뇌과학', this)">
+                뇌과학                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn106 btn-tw-outline" 
+                    data-value="106" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4="14"
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '스마트팜', this)">
+                스마트팜                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn108 btn-tw-outline" 
+                    data-value="108" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3=""
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', 'AR Cloud', this)">
+                AR Cloud                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn17 btn-tw-outline" 
+                    data-value="17" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '원격 의료', this)">
+                원격 의료                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn11 btn-tw-outline" 
+                    data-value="11" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '화상 회의', this)">
+                화상 회의                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn51 btn-tw-outline" 
+                    data-value="51" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', 'CSV', this)">
+                CSV                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn49 btn-tw-outline" 
+                    data-value="49" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3=""
+                    data-category4=""
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', 'DEI', this)">
+                DEI                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn48 btn-tw-outline" 
+                    data-value="48" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '젠더리스', this)">
+                젠더리스                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn67 btn-tw-outline" 
+                    data-value="67" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4="14"
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '수소 경제', this)">
+                수소 경제                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn172 btn-tw-outline" 
+                    data-value="172" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4="14"
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '스마트도시', this)">
+                스마트도시                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn159 btn-tw-outline" 
+                    data-value="159" 
+                    data-category1="" 
+                    data-category2=""
+                    data-category3="13"
+                    data-category4="14"
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '순환 경제', this)">
+                순환 경제                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn124 btn-tw-outline" 
+                    data-value="124" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '보스턴 다이내믹스', this)">
+                보스턴 다이내믹스                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn75 btn-tw-outline" 
+                    data-value="75" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '퍼스널 모빌리티', this)">
+                퍼스널 모빌리티                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn122 btn-tw-outline" 
+                    data-value="122" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3=""
+                    data-category4="14"
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '하이퍼루프', this)">
+                하이퍼루프                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn35 btn-tw-outline" 
+                    data-value="35" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3=""
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '몰입감', this)">
+                몰입감                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn150 btn-tw-outline" 
+                    data-value="150" 
+                    data-category1="" 
+                    data-category2=""
+                    data-category3=""
+                    data-category4="14"
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '미세 플라스틱', this)">
+                미세 플라스틱                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn154 btn-tw-outline" 
+                    data-value="154" 
+                    data-category1="" 
+                    data-category2=""
+                    data-category3=""
+                    data-category4="14"
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '사막화', this)">
+                사막화                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn60 btn-tw-outline" 
+                    data-value="60" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3=""
+                    data-category4=""
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '포용성', this)">
+                포용성                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn63 btn-tw-outline" 
+                    data-value="63" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '자율 주행차', this)">
+                자율 주행차                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn168 btn-tw-outline" 
+                    data-value="168" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3=""
+                    data-category4=""
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '3D 지도', this)">
+                3D 지도                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn135 btn-tw-outline" 
+                    data-value="135" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '헬스 케어', this)">
+                헬스 케어                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn107 btn-tw-outline" 
+                    data-value="107" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3=""
+                    data-category4="14"
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '페로브스카이트 태양전지', this)">
+                페로브스카이트 태양전지                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn138 btn-tw-outline" 
+                    data-value="138" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '암호 화폐', this)">
+                암호 화폐                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn161 btn-tw-outline" 
+                    data-value="161" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3=""
+                    data-category4="14"
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '대멸종', this)">
+                대멸종                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn111 btn-tw-outline" 
+                    data-value="111" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3=""
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '확장현실', this)">
+                확장현실                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn65 btn-tw-outline" 
+                    data-value="65" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '자율 비행', this)">
+                자율 비행                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn7 btn-tw-outline" 
+                    data-value="7" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '홈코노미', this)">
+                홈코노미                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn30 btn-tw-outline" 
+                    data-value="30" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3=""
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '프로슈머', this)">
+                프로슈머                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn41 btn-tw-outline" 
+                    data-value="41" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', 'X세대', this)">
+                X세대                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn157 btn-tw-outline" 
+                    data-value="157" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3=""
+                    data-category4="14"
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '업사이클', this)">
+                업사이클                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn104 btn-tw-outline" 
+                    data-value="104" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '탄소 소재', this)">
+                탄소 소재                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn15 btn-tw-outline" 
+                    data-value="15" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', 'D2C', this)">
+                D2C                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn55 btn-tw-outline" 
+                    data-value="55" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '기본소득', this)">
+                기본소득                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn163 btn-tw-outline" 
+                    data-value="163" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3=""
+                    data-category4="14"
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '기후행동', this)">
+                기후행동                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn56 btn-tw-outline" 
+                    data-value="56" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '리셀', this)">
+                리셀                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn148 btn-tw-outline" 
+                    data-value="148" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3="13"
+                    data-category4="14"
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '회복 탄력성', this)">
+                회복 탄력성                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn47 btn-tw-outline" 
+                    data-value="47" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '실버산업', this)">
+                실버산업                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn143 btn-tw-outline" 
+                    data-value="143" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '구독경제', this)">
+                구독경제                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn10 btn-tw-outline" 
+                    data-value="10" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '노마드', this)">
+                노마드                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn141 btn-tw-outline" 
+                    data-value="141" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '반려 동물', this)">
+                반려 동물                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn153 btn-tw-outline" 
+                    data-value="153" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3=""
+                    data-category4="14"
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '재난 안전', this)">
+                재난 안전                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn170 btn-tw-outline" 
+                    data-value="170" 
+                    data-category1="" 
+                    data-category2=""
+                    data-category3=""
+                    data-category4="14"
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '도시 재생', this)">
+                도시 재생                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn18 btn-tw-outline" 
+                    data-value="18" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3=""
+                    data-category4=""
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '바이오 메디컬', this)">
+                바이오 메디컬                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn8 btn-tw-outline" 
+                    data-value="8" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '스마트 워크', this)">
+                스마트 워크                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn123 btn-tw-outline" 
+                    data-value="123" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '무인배송', this)">
+                무인배송                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn114 btn-tw-outline" 
+                    data-value="114" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', 'Total Experience', this)">
+                Total Experience                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn9 btn-tw-outline" 
+                    data-value="9" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '긱 경제', this)">
+                긱 경제                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn61 btn-tw-outline" 
+                    data-value="61" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3=""
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '게이미피케이션', this)">
+                게이미피케이션                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn70 btn-tw-outline" 
+                    data-value="70" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3=""
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '자동차 경험', this)">
+                자동차 경험                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn27 btn-tw-outline" 
+                    data-value="27" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3=""
+                    data-category4=""
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', 'Digital Trust', this)">
+                Digital Trust                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn94 btn-tw-outline" 
+                    data-value="94" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3=""
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', 'WEB 3.0', this)">
+                WEB 3.0                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn4 btn-tw-outline" 
+                    data-value="4" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '셰어하우스', this)">
+                셰어하우스                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn19 btn-tw-outline" 
+                    data-value="19" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '개인건강기록', this)">
+                개인건강기록                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn6 btn-tw-outline" 
+                    data-value="6" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '워케이션', this)">
+                워케이션                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn166 btn-tw-outline" 
+                    data-value="166" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3=""
+                    data-category4="14"
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '식품공학', this)">
+                식품공학                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn33 btn-tw-outline" 
+                    data-value="33" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3=""
+                    data-category4="14"
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '그린슈머', this)">
+                그린슈머                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn71 btn-tw-outline" 
+                    data-value="71" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '스마트 로드', this)">
+                스마트 로드                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn80 btn-tw-outline" 
+                    data-value="80" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3=""
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', 'DNA 컴퓨팅', this)">
+                DNA 컴퓨팅                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn86 btn-tw-outline" 
+                    data-value="86" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3=""
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', 'VUI', this)">
+                VUI                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn45 btn-tw-outline" 
+                    data-value="45" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3=""
+                    data-category4=""
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '탈세계화', this)">
+                탈세계화                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn64 btn-tw-outline" 
+                    data-value="64" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '자율 통제', this)">
+                자율 통제                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn137 btn-tw-outline" 
+                    data-value="137" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '가상경제', this)">
+                가상경제                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn42 btn-tw-outline" 
+                    data-value="42" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '알파세대', this)">
+                알파세대                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn54 btn-tw-outline" 
+                    data-value="54" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', 'Smart Economy', this)">
+                Smart Economy                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn36 btn-tw-outline" 
+                    data-value="36" 
+                    data-category1="11" 
+                    data-category2=""
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '고용위축', this)">
+                고용위축                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn146 btn-tw-outline" 
+                    data-value="146" 
+                    data-category1="" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4="14"
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '지속 가능 에너지', this)">
+                지속 가능 에너지                </button>
+                                <button type="button" class="btn keyword_btn keyword_btn12 btn-tw-outline" 
+                    data-value="12" 
+                    data-category1="11" 
+                    data-category2="12"
+                    data-category3="13"
+                    data-category4=""
+                    data-category5="15" 
+                    style="margin-top: 10px; margin-left: 5px;" onclick="search('new', 'Edu tech', this)">
+                Edu tech                </button>
+                            </div>
+        </div>
+    </div>
+    <div class="row m-3">
+        <div class="col-lg-12">
+            <h3 class="ml-2 mb-2">개인화 키워드</h3>
+            <div style="height: 100px; overflow: auto; border: 1px solid #DAA630;">
+                                <button type="button" class="btn keyword_personal_btn11 btn-s4-outline" data-value="11" style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '화상 회의', this)">화상 회의</button>
+                                <button type="button" class="btn keyword_personal_btn107 btn-s4-outline" data-value="107" style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '페로브스카이트 태양전지', this)">페로브스카이트 태양전지</button>
+                                <button type="button" class="btn keyword_personal_btn105 btn-s4-outline" data-value="105" style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '저탄소', this)">저탄소</button>
+                                <button type="button" class="btn keyword_personal_btn106 btn-s4-outline" data-value="106" style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '스마트팜', this)">스마트팜</button>
+                                <button type="button" class="btn keyword_personal_btn104 btn-s4-outline" data-value="104" style="margin-top: 10px; margin-left: 5px;" onclick="search('new', '탄소 소재', this)">탄소 소재</button>
+                                <button type="button" class="btn keyword_personal_btn16 btn-s4-outline" data-value="16" style="margin-top: 10px; margin-left: 5px;" onclick="search('new', 'mRNA', this)">mRNA</button>
+                                <button type="button" class="btn keyword_personal_btn15 btn-s4-outline" data-value="15" style="margin-top: 10px; margin-left: 5px;" onclick="search('new', 'D2C', this)">D2C</button>
+                            </div>
+        </div>
+    </div>
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+    <div class="row m-3">  
+        <div class="col-6">
+            <div class="card">
+                <div class="card-body" style="height: 525px;">
+                    <div id='roadmap_tree_myChart' style="width: 100%; height: 500px;"></div>
+                </div>  
+            </div> 
+            <div class="card mt-3">
+                <div class="card-body" style="height: 525px;">
+                    <div id='roadmap_pie_myChart' style="width: 100%; height: 500px;"></div>
+                </div>  
+            </div> 
+        </div>  
+        <div class="col-6">
+            <div class="card">
+                <div class="card-body" style="height: 1050px; overflow:auto;">
+                    <h4 class="card-title fl-left">Reference</h4>
+                                        <a href="./roadmap/list" class="mb-3 btn btn-primary fl-right btn-s2">로드맵관리</a>
+                                        <table class="table table-striped table-bordered crawling-list" style="font-size: 11px;">
+                        <colgroup>
+                            <col width="*">
+                            <col width="45%">
+                            <col width="10%">
+                            <col width="17%">
+                        </colgroup>
+                        <thead>
+                            <th class="text-center">LOCATION</th>
+                            <th class="text-center">TITLE</th>
+                            <th class="text-center">PINGS</th>
+                            <th class="text-center">DATE</th>
+                        </thead>
+                        <tbody id="roadmap_tbody">
+
+                        </tbody>
+                    </table>
+                </div>  
+            </div> 
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modal-keyword-date" tabindex="-1" role="dialog" aria-labelledby="notification" aria-hidden="true">
+    <div class="modal-dialog" role="dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="product-approval">맞춤기간설정</h5>
+            </div>
+            <div class="modal-body">
+                <div class="row">   
+                    <div class="col-4" style="text-align: right;">
+                        <input type="radio" name="keyword_date_radio" value="1" checked class="">
+                        <label for="form-check-label">시작</label>
+                    </div>
+                    <div class="col-6">
+                        <input type="text" id="keyword_start_date" class="form-control">
+                    </div>
+                </div>
+                <div class="row mt-2 mb-2">   
+                    <div class="col-4" style="text-align: right;">
+                        <label for="form-check-label">종료</label>
+                    </div>
+                    <div class="col-6">
+                        <input type="text" id="keyword_end_date" class="form-control">
+                    </div>
+                </div>
+                <hr>
+                <div class="row mt-2">   
+                    <div class="col-4" style="text-align: right;">
+                        <input type="radio" name="keyword_date_radio" value="2" class="">
+                        <label for="form-check-label">1년전체</label>
+                    </div>
+                    <div class="col-6">
+                        <select class="form-control" id="keyword_select_year">
+                                                        <option value="2001">2001</option>
+                                                        <option value="2002">2002</option>
+                                                        <option value="2003">2003</option>
+                                                        <option value="2004">2004</option>
+                                                        <option value="2005">2005</option>
+                                                        <option value="2006">2006</option>
+                                                        <option value="2007">2007</option>
+                                                        <option value="2008">2008</option>
+                                                        <option value="2009">2009</option>
+                                                        <option value="2010">2010</option>
+                                                        <option value="2011">2011</option>
+                                                        <option value="2012">2012</option>
+                                                        <option value="2013">2013</option>
+                                                        <option value="2014">2014</option>
+                                                        <option value="2015">2015</option>
+                                                        <option value="2016">2016</option>
+                                                        <option value="2017">2017</option>
+                                                        <option value="2018">2018</option>
+                                                        <option value="2019">2019</option>
+                                                        <option value="2020">2020</option>
+                                                        <option value="2021">2021</option>
+                                                    </select>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light" data-dismiss="modal">닫기</button>
+                <button type="button" class="btn btn-primary" onclick="fn_keyword_date_search()">확인</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal modal-slide crawling-content-modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">×</button>
+            <div class="modal-body">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h2 class="card-title title"></h2>
+                        <p class="mb-3"><small class="text-muted date"></small></p>
+                        <p class="mb-3 link"></p>
+                        <div class="card-text content"></div>
+                        <div class="roadmap-add mt-4" style="text-align:center;"><button type="button" class="btn btn-primary" onclick="roadmap_modal_show()" style="border-radius: 20px;">로드맵 등록</button></div> 
+                    </div>
+                </div>
+            </div>
+            <form id="roadmap_modal_form" action="/roadmap/regist" method="post">
+            <input type="hidden" id="news_id" name="news_id" value="">
+            <div class="modal-body" id="modal-body-div" style="display:none;">
+                <div class="card-body mb-3" style="background-color:#e5e7eb;">
+                    <div class="row">
+                        <div class="col-12" style="text-align:center;">
+                            <div class="roadmap-add-form">
+                                <div class="form-group">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" id="keyword_category1" name="keyword_category1" value="11" class="form-check-input">Society
+                                    </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <label class="form-check-label">
+                                        <input type="checkbox" id="keyword_category2" name="keyword_category2" value="12" class="form-check-input">Technology
+                                    </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <label class="form-check-label">
+                                        <input type="checkbox" id="keyword_category3" name="keyword_category3" value="13" class="form-check-input">Economics
+                                    </label>
+                                </div>    
+                                <div class="form-group">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" id="keyword_category4" name="keyword_category4" value="14" class="form-check-input">Environment
+                                    </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <label class="form-check-label">
+                                        <input type="checkbox" id="keyword_category5" name="keyword_category5" value="15" class="form-check-input">Politics
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Select Layers</label>
+                                    <input type="text" class="form-control form-control-sm" id="roadmap_layers" name="roadmap_layers" autocomplete="off" placeholder="검색 또는 입력하여 추가" value="">
+                                    <div id="search_list" style="overflow:auto; max-height:300px; position:absoulte;z-index:1;"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Event Name</label>
+                                    <input type="text" name="roadmap_event" id="roadmap_event" class="form-control" placeholder="이벤트를 입력해주세요.">
+                                </div>
+                                <div class="input-group input-daterange d-flex align-items-center">
+                                    <div class="form-group">
+                                        <label for="">Start Date</label>
+                                        <input type="text" id="roadmap_start_date" name="roadmap_start_date" class="form-control">
+                                    </div>
+                                    <div class="input-group-addon mx-4">~</div>
+                                    <div class="form-group">
+                                        <label for="">End Date</label>
+                                        <input type="text" id="roadmap_end_date" name="roadmap_end_date" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Note</label>
+                                    <textarea name="note" id="roadmap_note" class="form-control" rows="3" placeholder="Note을 입력해주세요."></textarea>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-light" data-dismiss="modal">닫기</button>
+                            <button type="button" class="btn btn-primary" onclick="fn_roadmap_proc();">제출</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+    var chart1_selection, chart2_selection;
+    var chart1_data, chart2_data;
+    var area_data, pie_data;
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+            ['day', 'defalut'],
+            [getTimeStamp(),  0],
+        ]);
+
+        var options = {
+            title: '',
+            hAxis: {title: '',  titleTextStyle: {color: '#333'}},
+            vAxis: {minValue: 0}
+        };
+
+        var chart = new google.visualization.AreaChart(document.getElementById('roadmap_tree_myChart'));
+        chart.draw(data, options);
+    }
+
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart1);
+
+    function drawChart1() {
+
+        var data = google.visualization.arrayToDataTable([
+            ['Task', 'Hours per Day'],
+            ['defalut',     1]
+        ]);
+
+        var options = {
+            title: ''
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('roadmap_pie_myChart'));
+
+        chart.draw(data, options);
+    }
+</script>
+<script>
+var news_id ;
+function view(thi, id)
+{
+    event.preventDefault();
+    var keyword = roadmap_click_keyword;
+    $.ajax({
+        url : '/crawling/info',
+        type : 'POST',
+        datatype : 'json',
+        data : {
+            'id': id,
+            'keyword':keyword
+        },
+        beforeSend: function() {
+            $.blockUI(blockUI_config);
+        },
+        success:function(data) {
+            news_id = id;
+            var info = data.list[0];
+            $("#modal-body-div").hide();
+            $('.crawling-content-modal .date').html(info.date);
+            $('.crawling-content-modal .title').html(info.title);
+            $('.crawling-content-modal .link').html('<a href="' + info.link + '" target="_blank"><i>' + info.link + '</i></a>');
+            $('.crawling-content-modal .content').html(info.content);
+            $('.crawling-content-modal').modal('show');
+        },
+        complete: function() {
+            $.unblockUI();
+        }
+    });
+}
+
+var blockUI_config = {
+  message: '<div class="sk-fold sk-primary mx-auto mb-4"><div class="sk-fold-cube"></div><div class="sk-fold-cube"></div><div class="sk-fold-cube"></div><div class="sk-fold-cube"></div></div><h5 class="text-body text-white">검색중</h5>',
+  css: {
+    backgroundColor: 'transparent',
+    border: '0',
+    zIndex: 9999999
+  },
+  overlayCSS:  {
+    backgroundColor: '#fff',
+    opacity: 0.6,
+    zIndex: 9999990
+  }
+};
+
+$(function() {      
+
+    $('.crawling-list-wrapper').scroll(function(){
+        var dh = $(this).prop('scrollHeight');
+        var dch = $(this).innerHeight();
+        var dct = $(this).scrollTop();
+        
+        if ( dh == (dch + dct) ) {
+            search('add');
+        }
+    });
+
+    $("#roadmap_tree_myChart").css("overflow","visible");
+
+});
+
+var roadmap_click_keyword;
+function search(mode, keyword, thi)
+{
+
+    var flag = 1;
+    if( $("#keyword_value").val().indexOf(',') != -1 )
+    {
+        var jbSplit = $("#keyword_value").val().split(',');
+        for ( var i in jbSplit ) {
+            if( jbSplit[i] == $(thi).data("value") )
+            {
+                flag = 2;
+            }
+        }
+    }
+
+    if( flag == 1 )
+    {
+        if( $("#keyword_value").val() == "" ){
+            $("#keyword_value").val($(thi).data("value"));
+        }else{
+            $("#keyword_value").val($("#keyword_value").val()+","+$(thi).data("value"));
+        }
+    }
+    
+    $.ajax({
+        url : '/keyword/get_chart',
+        type : 'POST',
+        datatype : 'json',
+        data : {
+            'keyword_value': $("#keyword_value").val(),
+            'select_date': $("#select_date").val(),
+            'keyword_date_radio': $(':radio[name="keyword_date_radio"]:checked').val(),
+            'keyword_start_date': $("#keyword_start_date").val(),
+            'keyword_end_date': $("#keyword_end_date").val(),
+            'keyword_select_year': $("#keyword_select_year").val(),
+        },
+        beforeSend: function() {
+            $.blockUI(blockUI_config);
+        },
+        success:function(data) {
+            var data_value = [];
+            var data_value2 = [];
+            var i = 0;
+            var total_value = [];
+            data.chart_area_list.forEach(function(item, index, arr2) { 
+                var j = 0;
+                data_value2 = [];
+                item.forEach(function(item2, index, arr2) {                    
+                    if( i > 0 && j > 0 ){
+                        data_value2[j] = Number(item2);
+                    }else{
+                        data_value2[j] = item2;
+                    }
+                    j++;
+                });
+                data_value[i] = data_value2;
+                i++;
+            });
+            area_data = data_value;
+            var chart_data = google.visualization.arrayToDataTable(data_value);
+
+            var options = {
+                title: '',
+                hAxis: {title: '',  titleTextStyle: {color: '#333'}},
+                vAxis: {minValue: 0}
+            };
+
+            var chart1 = new google.visualization.AreaChart(document.getElementById('roadmap_tree_myChart'));
+            chart1.draw(chart_data, options);
+            chart1_selection = chart1;
+            chart1_data = chart_data;
+            google.visualization.events.addListener(chart1, 'select', selectHandler);
+            
+            i = 1;
+            data_value = [];
+            data_value[0] = ['Task', 'Hours per Day'];
+            data.total_list.forEach(function(item, index, arr2) { 
+                data_value[i] = [item.name, item.value];
+                i++;
+            });
+            
+            var chart_data = google.visualization.arrayToDataTable(data_value);
+
+            var options = {
+                title: ''
+            };
+
+            var chart2 = new google.visualization.PieChart(document.getElementById('roadmap_pie_myChart'));
+
+            chart2.draw(chart_data, options);
+
+        },
+        complete: function() {
+            $.unblockUI();
+            $(".keyword_btn"+$(thi).data('value')).attr("onclick", "");
+            $(".keyword_btn"+$(thi).data('value')).attr("onclick", "keyword_chart_remove(this)");
+            $(".keyword_btn"+$(thi).data('value')).removeClass('btn-tw-outline').addClass('btn-tw');
+            $(".keyword_personal_btn"+$(thi).data('value')).attr("onclick", "");
+            $(".keyword_personal_btn"+$(thi).data('value')).attr("onclick", "keyword_chart_remove(this)");
+            $(".keyword_personal_btn"+$(thi).data('value')).removeClass('btn-s4-outline').addClass('btn-s4');
+        }
+    });
+}
+
+function keyword_chart_remove(thi)
+{
+    var btn_text = $(thi).text();
+    $(".keyword_btn"+$(thi).data('value')).attr("onclick", "");
+    $(".keyword_btn"+$(thi).data('value')).attr("onclick", "search('new', '" + $.trim(btn_text) + "', this )");
+    $(".keyword_btn"+$(thi).data('value')).removeClass('btn-tw').addClass('btn-tw-outline'); 
+    $(".keyword_personal_btn"+$(thi).data('value')).attr("onclick", "");
+    $(".keyword_personal_btn"+$(thi).data('value')).attr("onclick", "search('new', '" + $.trim(btn_text) + "', this )");
+    $(".keyword_personal_btn"+$(thi).data('value')).removeClass('btn-s4').addClass('btn-s4-outline');
+    
+    var arr = $("#keyword_value").val().split(',');
+    for(var i = 0; i < arr.length; i++) {
+        if(Number(arr[i]) === $(thi).data('value'))  {
+            arr.splice(i, 1);
+            i--;
+        }
+    }
+    var btn_value = "";
+    for(var i = 0; i < arr.length; i++) {
+        if( i < 1 )  {
+            btn_value += arr[i];
+        }else{
+            btn_value += "," + arr[i];
+        }
+    }
+    $("#keyword_value").val(btn_value);
+    
+    $.ajax({
+        url : '/keyword/get_chart',
+        type : 'POST',
+        datatype : 'json',
+        data : {
+            'keyword_value': $("#keyword_value").val(),
+            'select_date': $("#select_date").val(),
+            'keyword_date_radio': $(':radio[name="keyword_date_radio"]:checked').val(),
+            'keyword_start_date': $("#keyword_start_date").val(),
+            'keyword_end_date': $("#keyword_end_date").val(),
+            'keyword_select_year': $("#keyword_select_year").val(),
+        },
+        beforeSend: function() {
+            $.blockUI(blockUI_config);
+        },
+        success:function(data) {
+            var data_value = [];
+            var data_value2 = [];
+            var i = 0;
+            var total_value = [];
+            data.chart_area_list.forEach(function(item, index, arr2) { 
+                var j = 0;
+                data_value2 = [];
+                item.forEach(function(item2, index, arr2) { 
+                    
+                    if( i > 0 && j > 0 ){
+                        data_value2[j] = Number(item2);
+                    }else{
+                        data_value2[j] = item2;
+                    }
+                    j++;
+                });
+                data_value[i] = data_value2;
+                i++;
+            });
+            area_data = data_value;
+            if( i == 0 ) {
+                var chart_data = google.visualization.arrayToDataTable([
+                    ['day', 'defalut'],
+                    [getTimeStamp(),  0],
+                ]);
+            }else{
+                var chart_data = google.visualization.arrayToDataTable(data_value);
+            }
+
+            var options = {
+                title: '',
+                hAxis: {title: '',  titleTextStyle: {color: '#333'}},
+                vAxis: {minValue: 0}
+            };
+
+            var chart1 = new google.visualization.AreaChart(document.getElementById('roadmap_tree_myChart'));
+            chart1.draw(chart_data, options);
+            chart1_selection = chart1;
+            chart1_data = chart_data;
+            google.visualization.events.addListener(chart1, 'select', selectHandler);
+            
+            var k = 1;
+            data_value = [];
+            data_value[0] = ['Task', 'Hours per Day'];
+            data.total_list.forEach(function(item, index, arr2) { 
+                data_value[k] = [item.name, item.value];
+                k++;
+            });
+
+            if( k == 1 ) {
+                var chart_data = google.visualization.arrayToDataTable([
+                    ['Task', 'Hours per Day'],
+                    ['defalut',     1]
+                ]);
+            }else{
+                var chart_data = google.visualization.arrayToDataTable(data_value);
+            }
+
+            var options = {
+                title: ''
+            };
+
+            var chart2 = new google.visualization.PieChart(document.getElementById('roadmap_pie_myChart'));
+
+            chart2.draw(chart_data, options);
+            google.visualization.events.addListener(chart2, 'select', selectHandler);
+        },
+        complete: function() {
+            $.unblockUI();
+        }
+    });
+
+}
+
+function fn_roadmap_proc()
+{
+
+    if( $("#roadmap_layers").val() == "" )
+    {
+        alert("Layers를 입력해주세요.");
+        return;
+    }
+
+    if( $("#roadmap_event").val() == "" )
+    {
+        alert("event를 입력해주세요.");
+        return;
+    }
+
+    $("#news_id").val(news_id);
+
+    $("#roadmap_modal_form")[0].submit();
+
+}
+
+function getTimeStamp() {
+
+    var d = new Date();
+    var s =
+        leadingZeros(d.getFullYear(), 4) + '-' +
+        leadingZeros(d.getMonth() + 1, 2) + '-' +
+        leadingZeros(d.getDate(), 2);
+
+    return s;
+}
+
+function leadingZeros(n, digits) {
+
+    var zero = '';
+    n = n.toString();
+
+    if (n.length < digits) {
+        for (i = 0; i < digits - n.length; i++)
+            zero += '0';
+    }
+    return zero + n;
+}
+
+function category_keyword_select(thi)
+{
+
+    if( $(thi).val() == "" ){
+        $(".keyword_btn").show();
+        return;    
+    }
+    
+    $(".keyword_btn").each(function(i){
+        if( $(this).data("category"+$(thi).val()) == "" ) {
+            $(this).hide();
+        }else{
+            $(this).show();
+        }
+    });
+
+}
+
+
+
+function selectHandler(e) {
+    var selection = chart1_selection.getSelection();
+    var message = '';
+    var row = '';
+    var column = '';
+
+    if( selection.length < 1 ){
+        var item = selection[0];
+        row = item.row;
+        column = item.column;
+    }else{
+        for (var i = 0; i < selection.length; i++) {
+            var item = selection[i];
+            if (item.row != null && item.column != null) {
+                row = item.row;
+                column = item.column;
+            } else if (item.row != null) {
+                row = item.row;
+                column = item.column;
+            } else if (item.column != null) {
+                row = item.row;
+                column = item.column;
+            }
+        }
+    }
+    
+    if( row === '' ) return;
+    var date = area_data[row+1][0];
+    var keyword = area_data[0][column];
+    
+    var mode = 'new';
+
+    $.ajax({
+        url : '/keyword/get_news',
+        type : 'GET',
+        datatype : 'json',
+        data : {
+            'keyword_date': date,
+            'keyword': keyword
+        },
+        beforeSend: function() {
+            console.log(date, keyword);
+            $.blockUI(blockUI_config);
+        },
+        success:function(data) {
+
+            if ( mode == 'new' ) {
+                $('.crawling-list-wrapper').scrollTop(0);
+                $('.crawling-list tbody tr').remove();
+            }
+        
+            data.list.forEach(function(item, index, arr2) { 
+                var html = '<tr>';
+                    html += '<td class="text-left">';
+                        html += '<a href="' + item.link + '" target="_blank">' + item.link + "</a>";
+                    html += '</td>';
+                    html += '<td>';
+                        html += '<a href="#" class="message-subject flex-shrink-1 d-block text-body" onclick="view(this,\'' + item.id + '\');">';
+                        html += item.title;
+                        html += '</a>';
+                    html += '</td>'
+                    html += '<td class="text-center">';
+                    if( item.pings == 0 ){
+                        // html += '<i class="fa fa-star-o"></i>';
+                        html += 'X';
+                    } else {
+                        // html += '<i class="fa fa-star"></i>';
+                        html += '<a href="#" class="message-subject flex-shrink-1 d-block text-body" onclick="view(this,\'' + item.id + '\');">';
+                        html += item.pings;
+                        html += '</a>';
+                    }
+                    html += '</td>';
+                    html += '<td class="text-center">';
+                        html += item.date;
+                    html += '</td>';
+                    html += '</tr>';
+
+                $('.crawling-list tbody').append(html);
+            });
+        },
+        complete: function() {
+            $.unblockUI();
+        }
+    });
+
+}
+</script>
+
+
+          <!-- Layout footer -->
+          <nav class="layout-footer footer bg-footer-theme">
+            <div class="container-fluid d-flex flex-wrap justify-content-between text-center container-p-x pb-3">
+              <div class="pt-3">
+                <span>Powered by <a href="https://handle.im" target="_blank" class="footer-link font-weight-bolder">SOULJAM WORKS</a>.</span>
+              </div>
+              <div class="pt-3">
+                @ <span class="footer-text font-weight-bolder">KFDRI</span>
+              </div>
+            </div>
+          </nav>
+          <!-- / Layout footer -->
+
+        </div>
+        <!-- Layout content -->
+
+      </div>
+      <!-- / Layout container -->
+
+    </div>
+
+    <!-- Overlay -->
+    <div class="layout-overlay layout-sidenav-toggle"></div>
+  </div>
+  <!-- / Layout wrapper -->
+
+  <!-- Core scripts -->
+  <script src="./assets/vendor/libs/popper/popper.js"></script>
+  <script src="./assets/vendor/js/bootstrap.js"></script>
+  <script src="./assets/vendor/js/sidenav.js"></script>
+
+  <!-- Libs -->
+  <script src="./assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+  <script src="./assets/vendor/libs/chartjs/chartjs.js"></script>
+  <script src="./assets/vendor/libs/datatables/datatables.js"></script>
+  <script src="./assets/vendor/libs/block-ui/block-ui.js"></script>
+
+  <!-- Demo -->
+  <script src="./assets/js/demo.js"></script>
+  <!-- <script src="./assets/js/dashboards_dashboard-1.js"></script> -->
+  <!-- <script src="./assets/js/tables_datatables.js"></script> -->
+
+  <!-- MonthPicker -->
+  <script src="./assets/js/jquery.mtz.monthpicker.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css">
+  <!-- DatePicker -->
+  <!-- <script src="./jquery-ui-1.12.1/datepicker-ko.js"></script> -->
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  <!-- common -->
+  <script src="./static/js/common.js"></script>
+  <script src="./static/js/modal.js"></script>
+  <script src="./static/js/main.js"></script>
+  <script src="./static/js/ajax.js"></script>
+
+
+    <!-- include libraries(jQuery, bootstrap) -->
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+    <!-- include summernote css/js -->
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+
+
+</body>
+
+</html>
