@@ -1,0 +1,41 @@
+.crawling-list-wrapper {
+	padding: 20px;
+	height: 703px;
+	overflow-y: auto;
+}
+
+.crawling-list {
+	table-layout: fixed;
+}
+
+.crawling-category-list {
+	padding: 4px 2px;
+	height: 200px;
+	overflow-y: auto;
+}
+
+.crawling-site-list {
+	padding: 4px 2px;
+	height: 500px;
+	overflow-y: auto;
+}
+
+.kfdri-table {
+	table-layout: fixed;
+}
+
+.modal-slide.crawling-content-modal .modal-dialog {
+	width: 50%;
+}
+
+.modal-slide.crawling-content-modal .modal-body {
+	margin: 0;
+}
+
+.modal-slide.crawling-content-modal .modal-body .card-title {
+	font-size: 1.813rem;
+}
+
+.sidenav-divider {
+	border-top: 0 none;
+}

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+.fs11 { font-size: 11px !important; }
+.fs12 { font-size: 12px !important; }
+.fs14 { font-size: 14px !important; }
+.fs16 { font-size: 16px !important; }
+.fs18 { font-size: 18px !important; }
+
+.close-btn, .more-btn {
+    display: block;
+    width: 100%;
+    padding: 80px 0 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background: -moz-linear-gradient(  top,  rgba(255, 255, 255, 0) 0%,  rgba(255, 255, 255, 1) 60%  );
+    background: -webkit-linear-gradient(  top,  rgba(255, 255, 255, 0) 0%,  rgba(255, 255, 255, 1) 60%  );
+    background: linear-gradient(  to bottom,  rgba(255, 255, 255, 0) 0%,  rgba(255, 255, 255, 1) 60%  );
+ filter: progid:DXImageTransform.Microsoft.gradient(  startColorstr='#00ffffff',  endColorstr='#ffffff',  GradientType=0  );
+}
+.close-btn {
+    background: none;
+}
+.slide-up {
+    height: 150px;
+    padding-bottom: 0;
+    overflow: hidden;
+}
+.slide-down {
+    height: auto;
+    overflow: visible;
+    padding-bottom: 50px;
+}
+.more-btn p {
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;
+    background: #d95095;
+    padding: 5px 20px;
+    width: 20%;
+    border-radius: 20px;
+}
+.close-btn {
+    padding: 0;
+}
+.close-btn p {
+    background: #cd81a7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.chart--container {
+    min-height: 500px;
+    overflow: auto;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.item_tr:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+#tree_myChart-license-text {
+  display: none !important;
+}
+            .link {
+                fill: none;
+                stroke: #ccc;
+                stroke-width: 1.5px;
+            }

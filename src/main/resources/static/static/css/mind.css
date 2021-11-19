@@ -1,0 +1,168 @@
+.mind-body{
+    width: 100%;
+    padding: 10px;
+    height: 500px;
+    overflow: auto;
+}
+.mind-box{
+    width: 22.5%;
+    margin: 11px;
+    height: 250px;
+    float: left;
+    border: 1px solid #26B4FF;
+}
+.mind-box-top{
+    width: 100%;
+    height: 130px;
+}
+.mind-header{
+    margin: 3px;
+    height: 50px;
+}
+.mind-subject{
+    font-size: 17px;
+    color: #26B4FF;
+    font-weight: bold;
+    float: left;
+    margin-left: 7px;
+    margin-top: 7px;
+}
+.mind-tag{
+    font-size: 17px;
+    color: #26B4FF;
+    font-weight: bold;
+    margin-left: 7px;
+    float: left;
+    width: 100%;
+    overflow: hidden;
+}
+.mind-subject-checkbox{
+    float: right;
+}
+.mind-header-p{
+    color: #26B4FF;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.mind-header-content{
+    margin-top: 23px;
+}
+.mind-box-center{
+    height: 70px;
+    border-top: 1px solid #26B4FF;
+    padding-top: 8px;
+    text-align: center;
+}
+.mind-box-bottom{
+    height: 50px;
+    border-top: 1px solid #26B4FF;
+    padding: 5px;
+}
+.mind-bottom-text{
+    margin-top: 5px;
+    float: left;
+}
+.mind-bottom-span{
+    color: #26B4FF;
+    font-size: 11px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.mind-bottom-btn{
+    float: right;
+    margin-top: 5px;
+}
+
+/* 설문조사 modfiy */
+.mind-modify-top{
+    padding: 2em;
+    text-align: center;
+}
+.mind-modify-top-subject{
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding-top: 15px;
+}
+.mind-modify-top-subject > span{
+    font-size: 14px;
+    font-weight: bold;
+    
+}
+.mind-modify-top-operator{
+    padding-top: 2em;
+    padding-left: 7em;
+    padding-right: 6em;
+    width: 100%;
+    text-align: left;
+}
+.mind-operator-select{
+    width: 20%;
+    margin-right: 2em;
+}
+.mind-operator-input{
+    width: 20%;
+    margin-right: 2em;
+}
+
+
+/* mind 시각화 */
+.mind-visual-question-box{
+    min-width: 150px;
+    height: 100%;
+    text-align: center;
+    border-right: 0.5px solid #e5e7eb;
+    background-color: white;
+    padding-top: 1.9em;
+    padding-left: 0.5em;
+    padding-right: 1em;
+    display: inline-block;
+    position: relative;
+    white-space:nowrap;
+}
+.mind-visual-bottom-left-box-top{
+    height: 50px;
+    margin-top: 2em;
+}
+.mind-visual-bottom-left-box-al{
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 1em 2em 1em 2em;
+    cursor: pointer;
+}
+.mind-al-on{
+    background-color: darkgray;
+    color: white;
+}
+.mind-visual-bottom-left-box-bottom{
+    height: 50px;
+    margin-top: 4em;
+    padding-top: 1.5em;
+    padding-bottom: 0.5em;
+}
+.mind-visual-bottom-right-box-top{
+    height: 120px;
+    padding: 2em;
+}
+.mind-visual-bottom-right-box-bottom{
+    margin-top: 5px;
+}
+.mind-visual-bottom-right-box-bottom-box{
+    background-color: white;    
+    height: 500px;
+    margin-right: 3px;
+    display: inline-block;
+}
+.mind-visual-graph-box{
+    display: inline-block;
+    margin-right: 2em;
+    margin-top: 2em;
+}
+.mind-visual-graph-box-color{
+    display: inline-block;
+    width: 20px; 
+    height: 20px; 
+    border-radius: 20px;
+}

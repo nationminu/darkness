@@ -1,0 +1,50 @@
+.interview-body,
+.note-editable {
+	font-family: 'Noto Sans KR', sans-serif !important;
+	letter-spacing: -1px;
+}
+
+.interview-body .interview-title {
+	margin-top: 115px;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.interview-body .interview-user {
+	font-size: 14px;
+	margin-top: 15px;
+	color: #8e8e8e;
+	font-weight: 300;
+}
+
+.interview-body .interview-content {
+	margin-top: 56px;
+	border-top: 1px solid #eee;
+}
+
+.interview-body .interview-content img,
+.note-editable img {
+	display: inline-block !important;
+}
+
+.interview-body .interview-content h1,
+.note-editable h1 {
+	margin-top: 98px;
+	font-size: 32px;
+	font-weight: bold;
+}
+
+.interview-body .interview-content h2,
+.note-editable h2 {
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 44px;
+}
+
+.interview-body .interview-content h3,
+.note-editable h3 {
+	margin-top: 7px;
+	font-size: 18px;
+	line-height: 32px;
+	font-weight: 300;
+}
