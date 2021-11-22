@@ -1,5 +1,5 @@
 # Darkness of Allowto
 
 ```
-HELLO WORLD
+HELLO WORLD ver1.0
 ```
